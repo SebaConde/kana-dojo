@@ -106,6 +106,10 @@ interface ICalligraphyState {
 }
 
 const useCalligraphyStore = create<ICalligraphyState>(set => ({
+  // Completed kana tracking
+  completedHiragana: [],
+  completedKatakana: [],
+
   // Kana type
   selectedKanaType: 'hiragana',
   setSelectedKanaType: type => set({ selectedKanaType: type }),
