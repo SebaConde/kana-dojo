@@ -459,22 +459,24 @@ const WordBuildingGame = ({
             )}
           >
             {bottomBarState === 'correct' ? (
-              <CircleCheck className='h-8 w-8 text-[var(--main-color)] sm:h-12 sm:w-12' />
+              <CircleCheck className='h-10 w-10 text-[var(--main-color)] sm:h-12 sm:w-12' />
             ) : (
-              <CircleX className='h-8 w-8 text-[var(--secondary-color)] sm:h-12 sm:w-12' />
+              <CircleX className='h-10 w-10 text-[var(--secondary-color)] sm:h-12 sm:w-12' />
             )}
             <div className='flex flex-col'>
               <span
                 className={clsx(
-                  'text-sm font-bold sm:text-2xl',
+                  'text-lg font-bold sm:text-2xl',
                   bottomBarState === 'correct'
                     ? 'text-[var(--main-color)]'
                     : 'text-[var(--secondary-color)]'
                 )}
               >
-                {bottomBarState === 'correct' ? 'Correct!' : 'Solution:'}
+                {bottomBarState === 'correct'
+                  ? 'Nicely done!'
+                  : 'Correct solution:'}
               </span>
-              <span className='text-xs font-medium text-[var(--secondary-color)]/60 sm:text-lg'>
+              <span className='text-sm font-medium text-[var(--secondary-color)]/60 sm:text-lg'>
                 {wordData.answerChars.join('')}
               </span>
             </div>
