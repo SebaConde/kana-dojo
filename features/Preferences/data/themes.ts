@@ -901,6 +901,12 @@ const baseThemeSets: BaseThemeGroup[] = [
         mainColor: 'oklch(93.0% 0.210 340.0 / 1)',           // radiant sakura pink
         secondaryColor: 'oklch(85.0% 0.148 262.0 / 1)',      // cool hyacinth blue
       },
+      {
+        id: 'suzu',
+        backgroundColor: 'oklch(14.2% 0.025 240.0 / 1)',    // midnight frosted slate
+        mainColor: 'oklch(98.0% 0.175 285.0 / 1)',           // radiant snow silver
+        secondaryColor: 'oklch(86.0% 0.120 210.0 / 1)',      // icy mist blue
+      },
     ]
   },
   {
