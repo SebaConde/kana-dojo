@@ -943,7 +943,13 @@ const baseThemeSets: BaseThemeGroup[] = [
         backgroundColor: 'oklch(22.0% 0.045 145.0 / 1)', // reef dusk
         mainColor: 'oklch(90.0% 0.208 150.0 / 1)', // coral green
         secondaryColor: 'oklch(82.0% 0.160 185.0 / 1)' // lagoon teal
-      }
+      },
+      {
+        id: 'shion',
+        backgroundColor: 'oklch(18.5% 0.030 270.0 / 1)',    // matte onyx
+        mainColor: 'oklch(75.0% 0.146 300.0 / 1)',           // refined violet
+        secondaryColor: 'oklch(58.8% 0.120 145.0 / 1)',      // woodland shadow
+      },
     ]
   },
   {
