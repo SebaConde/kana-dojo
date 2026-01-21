@@ -6,8 +6,9 @@ import usePreferencesStore from '@/features/Preferences/store/usePreferencesStor
 import { buttonBorderStyles } from '@/shared/lib/styles';
 import fonts from '../data/fonts';
 import { isRecommendedFont } from '../data/recommendedFonts';
-import { Dice5 } from 'lucide-react';
+import { Dice5, Star, Type } from 'lucide-react';
 import { Random } from 'random-js';
+import CollapsibleSection from './CollapsibleSection';
 
 const random = new Random();
 
@@ -85,22 +86,13 @@ const Fonts = () => {
       </button>
 
       {/* Recommended Fonts Section */}
-      <div className='flex flex-col gap-3'>
-        <div className='flex items-center gap-2'>
-          <h3 className='text-xl font-semibold text-[var(--main-color)]'>
-            Recommended
-          </h3>
-          {/* 
-          <span className='text-sm text-[var(--secondary-color)]'>
-            ({recommendedFonts.length})
-          </span>
- */}
-        </div>
-        {/* 
-        <p className='-mt-1 text-sm text-[var(--secondary-color)]'>
-          Used in real Japanese textbooks, books & media
-        </p>
- */}
+      <CollapsibleSection
+        title='Recommended'
+        icon={<Star size={18} />}
+        level='subsubsection'
+        defaultOpen={true}
+        storageKey='prefs-fonts-recommended'
+      >
         <fieldset
           className={clsx(
             'grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4',
@@ -108,25 +100,16 @@ const Fonts = () => {
         >
           {recommendedFonts.map(renderFontCard)}
         </fieldset>
-      </div>
+      </CollapsibleSection>
 
       {/* Other Fonts Section */}
-      <div className='flex flex-col gap-3'>
-        <div className='flex items-center gap-2'>
-          <h3 className='text-xl font-semibold text-[var(--main-color)]'>
-            Other
-          </h3>
-          {/* 
-          <span className='text-sm text-[var(--secondary-color)]'>
-            ({otherFonts.length})
-          </span>
- */}
-        </div>
-        {/* 
-        <p className='-mt-1 text-sm text-[var(--secondary-color)]'>
-          Fun & decorative fonts for entertainment
-        </p>
- */}
+      <CollapsibleSection
+        title='Other'
+        icon={<Type size={18} />}
+        level='subsubsection'
+        defaultOpen={true}
+        storageKey='prefs-fonts-other'
+      >
         <fieldset
           className={clsx(
             'grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4',
@@ -134,7 +117,7 @@ const Fonts = () => {
         >
           {otherFonts.map(renderFontCard)}
         </fieldset>
-      </div>
+      </CollapsibleSection>
       <div className='flex flex-col gap-2'>
         <h4 className='text-xl'>Hiragana:</h4>
         <p className='text-3xl text-[var(--secondary-color)]' lang='ja'>

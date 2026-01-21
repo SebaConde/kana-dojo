@@ -13,6 +13,7 @@ import { useState } from 'react';
 import { Dice5, Plus, Trash2 } from 'lucide-react';
 import { Random } from 'random-js';
 import { useCustomThemeStore } from '@/features/Preferences/store/useCustomThemeStore';
+import CollapsibleSection from './CollapsibleSection';
 
 const random = new Random();
 
@@ -136,11 +137,14 @@ const Themes = () => {
         </button>
       </div>
       {themeSets.map((themeSet, i) => (
-        <div key={i} className='flex flex-col gap-3'>
-          <h4 className='flex flex-row items-center gap-1.5 text-xl'>
-            {createElement(themeSet.icon)}
-            <span>{themeSet.name}</span>
-          </h4>
+        <CollapsibleSection
+          key={i}
+          title={themeSet.name}
+          icon={createElement(themeSet.icon, { size: 18 })}
+          level='subsubsection'
+          defaultOpen={true}
+          storageKey={`prefs-theme-group-${themeSet.name.toLowerCase()}`}
+        >
           <fieldset
             className={clsx(
               'grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4',
@@ -236,7 +240,7 @@ const Themes = () => {
               </label>
             ))}
           </fieldset>
-        </div>
+        </CollapsibleSection>
       ))}
 
       {/* Custom Themes */}

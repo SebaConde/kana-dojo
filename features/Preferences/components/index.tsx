@@ -4,6 +4,7 @@ import Themes from './Themes';
 import Fonts from './Fonts';
 import Behavior from './Behavior';
 import Backup from './Backup';
+import CollapsibleSection from './CollapsibleSection';
 // import GoalTimers from './GoalTimers';
 import {
   Joystick,
@@ -11,52 +12,79 @@ import {
   CaseSensitive,
   Blocks,
   Palette,
+  Save,
   // Target
 } from 'lucide-react';
 
 const Settings = () => {
   return (
-    <div className='flex flex-col gap-8'>
-      <div className='flex flex-col gap-4'>
-        <h3 className='flex flex-row items-center gap-2 border-b-2 border-[var(--border-color)] py-6 text-3xl'>
-          <Joystick />
-          <span>Behavior</span>
-        </h3>
+    <div className='flex flex-col gap-6'>
+      {/* Behavior Section */}
+      <CollapsibleSection
+        title='Behavior'
+        icon={<Joystick size={28} />}
+        level='section'
+        defaultOpen={true}
+        storageKey='prefs-behavior'
+      >
         <Behavior />
-      </div>
-      <div className='flex flex-col gap-4'>
-        <h3 className='flex flex-row items-center gap-2 border-b-2 border-[var(--border-color)] py-6 text-3xl'>
-          <Palette size={28} />
-          <span>Display</span>
-        </h3>
-        <h3 className='flex flex-row items-center gap-2 border-b-1 border-[var(--border-color)] pb-2 text-2xl'>
-          <Sparkles />
-          <span>Themes</span>
-        </h3>
-        <Themes />
-      </div>
-      <div className='flex flex-col gap-4'>
-        <h3 className='flex flex-row items-end gap-2 border-b-1 border-[var(--border-color)] pb-2 text-2xl'>
-          <CaseSensitive size={32} />
-          <span>Fonts</span>
-        </h3>
-        <Fonts />
-      </div>
+      </CollapsibleSection>
+
+      {/* Display Section */}
+      <CollapsibleSection
+        title='Display'
+        icon={<Palette size={28} />}
+        level='section'
+        defaultOpen={true}
+        storageKey='prefs-display'
+      >
+        <div className='flex flex-col gap-6'>
+          {/* Themes Subsection */}
+          <CollapsibleSection
+            title='Themes'
+            icon={<Sparkles size={22} />}
+            level='subsection'
+            defaultOpen={true}
+            storageKey='prefs-themes'
+          >
+            <Themes />
+          </CollapsibleSection>
+
+          {/* Fonts Subsection */}
+          <CollapsibleSection
+            title='Fonts'
+            icon={<CaseSensitive size={28} />}
+            level='subsection'
+            defaultOpen={true}
+            storageKey='prefs-fonts'
+          >
+            <Fonts />
+          </CollapsibleSection>
+        </div>
+      </CollapsibleSection>
+
       {/* Goal Timers section - commented out
-      <div className='flex flex-col gap-4'>
-        <h3 className='flex flex-row text-2xl gap-2 items-center pb-2 border-b-1 border-[var(--border-color)]'>
-          <Target size={28} />
-          <span>Goal Timers</span>
-        </h3>
+      <CollapsibleSection
+        title='Goal Timers'
+        icon={<Target size={28} />}
+        level='section'
+        defaultOpen={true}
+        storageKey='prefs-goal-timers'
+      >
         <GoalTimers />
-      </div>
+      </CollapsibleSection>
       */}
+
+      {/* Backup Section - not collapsible since it's short */}
       <div className='flex flex-col gap-4'>
         <h3 className='flex flex-row items-end gap-2 border-b-1 border-[var(--border-color)] pb-2 text-2xl'>
+          <Save size={22} className='text-[var(--secondary-color)]' />
           <span>Backup</span>
         </h3>
         <Backup />
       </div>
+
+      {/* Coming Soon */}
       <div className='mb-12 flex flex-col gap-4'>
         <h3
           className={clsx(

@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     template: '%s | KanaDojo',
   },
   description:
-    'Master Japanese with KanaDojo - a fun, aesthetic, minimalist platform for learning Hiragana, Katakana, Kanji, and Vocabulary. Practice with interactive games, track progress, and customize your learning experience.',
+    'Master Japanese with KanaDojo - a fun, aesthetic platform for learning Hiragana, Katakana, Kanji, and Vocabulary. Practice with interactive games, track progress, and customize your learning experience.',
   icons: {
     icon: [
       { url: '/favicon.ico?v=2' },
