@@ -71,6 +71,40 @@ jobs:
               return String(title).replace(' Add ', ` Add ${first}, ${second} `);
             }
 
+            async function resolveMilestoneNumber() {
+              const configuredMilestoneTitle = t.common.milestoneTitle;
+              const fallbackMilestoneNumber = t.common.milestoneNumber;
+
+              if (!configuredMilestoneTitle) {
+                return fallbackMilestoneNumber;
+              }
+
+              const targetTitle = String(configuredMilestoneTitle).trim().toLowerCase();
+
+              try {
+                const milestones = await github.paginate(github.rest.issues.listMilestones, {
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  state: 'open',
+                  per_page: 100,
+                });
+
+                const matchedMilestone = milestones.find(function(milestone) {
+                  return String(milestone.title || '').trim().toLowerCase() === targetTitle;
+                });
+
+                if (matchedMilestone) {
+                  return matchedMilestone.number;
+                }
+
+                console.log(`Milestone titled "${configuredMilestoneTitle}" was not found among open milestones; falling back to milestone number ${fallbackMilestoneNumber}.`);
+              } catch (e) {
+                console.log(`Could not resolve milestone title "${configuredMilestoneTitle}": ${e.message}. Falling back to milestone number ${fallbackMilestoneNumber}.`);
+              }
+
+              return fallbackMilestoneNumber;
+            }
+
             const statePath = 'data/community-backlog/automation-state.json';
             const themeBacklogPath = 'data/community-backlog/theme-backlog.json';
             const factsBacklogPath = 'data/community-backlog/facts-backlog.json';
@@ -608,16 +642,22 @@ jobs:
             }
 
             const labels = templates.labels.newIssue;
+            const resolvedMilestoneNumber = await resolveMilestoneNumber();
 
-            const response = await github.rest.issues.create({
+            const createIssuePayload = {
               owner: context.repo.owner,
               repo: context.repo.repo,
               title: issueTitle,
               body: issueBody,
               labels: labels,
-              milestone: t.common.milestoneNumber,
               type: 'Task'
-            });
+            };
+
+            if (typeof resolvedMilestoneNumber === 'number') {
+              createIssuePayload.milestone = resolvedMilestoneNumber;
+            }
+
+            const response = await github.rest.issues.create(createIssuePayload);
 
             console.log(`Created issue #${response.data.number}: ${issueTitle}`);
 
