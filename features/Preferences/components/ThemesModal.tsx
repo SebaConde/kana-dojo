@@ -22,6 +22,7 @@ interface ThemesModalProps {
 // Local type definitions for lazy-loaded themes
 interface Theme {
   id: string;
+  displayName?: string;
   backgroundColor: string;
   cardColor: string;
   borderColor: string;
@@ -38,6 +39,7 @@ interface ThemeGroup {
 interface ThemeCardProps {
   theme: {
     id: string;
+    displayName?: string;
     backgroundColor: string;
     cardColor: string;
     borderColor: string;
@@ -71,9 +73,10 @@ const ThemeCard = memo(function ThemeCard({
     state => state.selectedWallpaperId,
   );
 
-  const themeName = theme.id.replaceAll('-', ' ');
+  const themeName = theme.displayName ?? theme.id.replaceAll('-', ' ');
   const isChaosTheme = theme.id === '?';
   const isPremiumTheme = isPremiumThemeId(theme.id);
+  const isBigBeautifulTheme = theme.id === 'big-beautiful-theme';
 
   // Check if theme has a default wallpaper (premium themes)
   const themeWallpaperId = getThemeDefaultWallpaperId(theme.id);
@@ -99,7 +102,7 @@ const ThemeCard = memo(function ThemeCard({
 
   return (
     <div
-      className='cursor-pointer rounded-lg p-3'
+      className={`cursor-pointer rounded-lg p-3 ${isBigBeautifulTheme ? 'col-span-2 row-span-2 min-h-[11rem]' : ''}`}
       style={{
         ...(wallpaper ? wallpaperStyles : { background }),
         border: borderStyle,

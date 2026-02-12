@@ -181,8 +181,11 @@ const Themes = () => {
                 key={currentTheme.id}
                 className={clsx(
                   currentTheme.id === 'long' && 'col-span-full',
+                  currentTheme.id === 'big-beautiful-theme' &&
+                    'col-span-2 row-span-2',
                   'flex items-center justify-center rounded-xl py-4 hover:cursor-pointer',
                   'flex-1',
+                  currentTheme.id === 'big-beautiful-theme' && 'min-h-[11rem]',
                   currentTheme.id === selectedTheme &&
                     'border-0 border-(--main-color)',
                 )}
@@ -307,6 +310,8 @@ const Themes = () => {
                     </span> */}
                     {currentTheme.id === 'long'
                       ? 'long loooooooong theme'
+                      : currentTheme.displayName
+                        ? currentTheme.displayName
                       : currentTheme.id.split('-').map((themeNamePart, i) => (
                           <span
                             key={`${currentTheme.id}-${i}`}

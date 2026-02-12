@@ -31,6 +31,7 @@ export { generateCardColor, generateButtonBorderColor } from './themeColors';
 
 interface Theme {
   id: string;
+  displayName?: string;
   backgroundColor: string;
   cardColor: string;
   borderColor: string;
@@ -174,6 +175,7 @@ export function getThemeDefaultWallpaperId(
 function buildTheme(base: BaseTheme, isLight: boolean): Theme {
   return {
     id: base.id,
+    displayName: base.displayName,
     backgroundColor: base.backgroundColor,
     cardColor: generateCardColor(base.backgroundColor, isLight),
     borderColor: generateBorderColor(base.backgroundColor, isLight),

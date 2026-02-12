@@ -20,6 +20,7 @@ import { GENERATED_WALLPAPERS } from './wallpapers.generated';
 // Base theme definition - only essential colors, card/border are derived
 export interface BaseTheme {
   id: string;
+  displayName?: string;
   backgroundColor: string;
   mainColor: string;
   secondaryColor: string;
@@ -134,6 +135,13 @@ const baseThemeSets: BaseThemeGroup[] = [
     icon: Moon,
     isLight: false,
     themes: [
+      {
+        id: 'big-beautiful-theme',
+        displayName: 'big, beautiful theme',
+        backgroundColor: 'oklch(14.0% 0.048 262.0 / 1)',
+        mainColor: 'oklch(86.0% 0.145 85.0 / 1)',
+        secondaryColor: 'oklch(69.0% 0.225 28.0 / 1)',
+      },
       {
         id: 'soba-slate',
         backgroundColor: 'oklch(18.0% 0.015 250.0 / 1)',
