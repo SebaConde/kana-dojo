@@ -305,7 +305,8 @@ function QuestionDisplay<T>({
               lastAnswerCorrect === null && 'text-(--main-color)',
             )}
           >
-            {currentQuestion && renderQuestion(currentQuestion, isReverseActive)}
+            {currentQuestion &&
+              renderQuestion(currentQuestion, isReverseActive)}
           </div>
         </div>
       </div>
@@ -420,8 +421,7 @@ function PickModeOptions<T>({
               'active:scale-95 active:duration-200 md:active:scale-98',
               'text-(--border-color)',
               'border-b-4',
-              isWrong &&
-                'border-(--border-color) hover:bg-(--card-color)',
+              isWrong && 'border-(--border-color) hover:bg-(--card-color)',
               !isWrong &&
                 'border-(--secondary-color)/50 text-(--secondary-color) hover:border-(--secondary-color)',
             )}
@@ -437,9 +437,7 @@ function PickModeOptions<T>({
               className={clsx(
                 'hidden rounded-full bg-(--border-color) px-1 text-xs lg:inline',
                 isReverseActive ? '' : 'mr-4',
-                isWrong
-                  ? 'text-(--border-color)'
-                  : 'text-(--secondary-color)',
+                isWrong ? 'text-(--border-color)' : 'text-(--secondary-color)',
               )}
             >
               {i + 1}
