@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       force_type:
-        description: 'Force issue type: theme | fact | proverb | trivia | grammar | animeQuote | idiom | regionalDialect | falseFriend | culturalEtiquette | exampleSentence | commonMistake'
+        description: 'Force issue type: theme | fact | proverb | trivia | grammar | animeQuote | videoGameQuote | idiom | regionalDialect | falseFriend | culturalEtiquette | exampleSentence | commonMistake'
         required: false
         type: string
       dry_run:
@@ -118,6 +118,7 @@ jobs:
             const culturalEtiquetteBacklogPath = 'community/backlog/cultural-etiquette-backlog.json';
             const exampleSentencesBacklogPath = 'community/backlog/example-sentences-backlog.json';
             const commonMistakesBacklogPath = 'community/backlog/common-mistakes-backlog.json';
+            const videoGameQuotesBacklogPath = 'community/backlog/video-game-quotes-backlog.json';
 
             const themesSourcePath = 'community/content/community-themes.json';
             const factsSourcePath = 'community/content/japan-facts.json';
@@ -136,6 +137,7 @@ jobs:
             const culturalEtiquetteSourcePath = 'community/content/japanese-cultural-etiquette.json';
             const exampleSentencesSourcePath = 'community/content/japanese-example-sentences.json';
             const commonMistakesSourcePath = 'community/content/japanese-common-mistakes.json';
+            const videoGameQuotesSourcePath = 'community/content/japanese-videogame-quotes.json';
 
             let state = JSON.parse(fs.readFileSync(statePath, 'utf8'));
             const themes = JSON.parse(fs.readFileSync(themeBacklogPath, 'utf8'));
@@ -150,6 +152,7 @@ jobs:
             const culturalEtiquette = JSON.parse(fs.readFileSync(culturalEtiquetteBacklogPath, 'utf8'));
             const exampleSentences = JSON.parse(fs.readFileSync(exampleSentencesBacklogPath, 'utf8'));
             const commonMistakes = JSON.parse(fs.readFileSync(commonMistakesBacklogPath, 'utf8'));
+            const videoGameQuotes = JSON.parse(fs.readFileSync(videoGameQuotesBacklogPath, 'utf8'));
 
             if (typeof state.consecutiveNoIssueRuns !== 'number') {
               state.consecutiveNoIssueRuns = 0;
@@ -265,6 +268,15 @@ jobs:
               }
             }
 
+            let existingVideoGameQuotes = [];
+            if (fs.existsSync(videoGameQuotesSourcePath)) {
+              try {
+                existingVideoGameQuotes = JSON.parse(fs.readFileSync(videoGameQuotesSourcePath, 'utf8'));
+              } catch (e) {
+                console.log(`Could not parse ${videoGameQuotesSourcePath}: ${e.message}`);
+              }
+            }
+
             let themesSourceContent = '';
             let existingThemes = [];
             if (fs.existsSync(themesSourcePath)) {
@@ -293,7 +305,7 @@ jobs:
               }
             }
 
-            const defaultOrder = ['theme', 'fact', 'proverb', 'trivia', 'grammar', 'animeQuote', 'idiom', 'regionalDialect', 'falseFriend', 'culturalEtiquette', 'exampleSentence', 'commonMistake'];
+            const defaultOrder = ['theme', 'fact', 'proverb', 'trivia', 'grammar', 'animeQuote', 'videoGameQuote', 'idiom', 'regionalDialect', 'falseFriend', 'culturalEtiquette', 'exampleSentence', 'commonMistake'];
             const typeOrder = forceType && defaultOrder.includes(forceType)
               ? [forceType]
               : defaultOrder;
@@ -674,6 +686,66 @@ jobs:
               const quoteIndex = animeQuotes.findIndex(function(q) { return q.id === item.id; });
               animeQuotes[quoteIndex].issued = true;
               fs.writeFileSync(animeQuotesBacklogPath, JSON.stringify(animeQuotes, null, 2));
+              backlogChanged = true;
+              } else if (nextType === 'videoGameQuote') {
+              item = videoGameQuotes.find(function(q) {
+                if (q.issued || q.completed) {
+                  return false;
+                }
+                if (Array.isArray(existingVideoGameQuotes)) {
+                  const exists = existingVideoGameQuotes.some(function(eq) {
+                    if (!eq || typeof eq !== 'object') {
+                      return false;
+                    }
+                    return eq.japanese === q.japanese
+                      && eq.romaji === q.romaji
+                      && eq.english === q.english
+                      && eq.game === q.game
+                      && eq.character === q.character;
+                  });
+                  if (exists) {
+                    const quoteIdx = videoGameQuotes.findIndex(function(qi) { return qi.id === q.id; });
+                    videoGameQuotes[quoteIdx].completed = true;
+                    backlogChanged = true;
+                    return false;
+                  }
+                }
+                return true;
+              });
+
+              if (!item) {
+                console.log('No more video game quotes available in backlog.');
+                if (backlogChanged) {
+                  fs.writeFileSync(videoGameQuotesBacklogPath, JSON.stringify(videoGameQuotes, null, 2));
+                }
+                continue;
+              }
+
+              const duplicateQuote = await hasOpenIssueForQuery(`"Video Game Quote" "${item.id}"`);
+
+              if (duplicateQuote) {
+                const quoteIdx = videoGameQuotes.findIndex(function(q) { return q.id === item.id; });
+                videoGameQuotes[quoteIdx].issued = true;
+                fs.writeFileSync(videoGameQuotesBacklogPath, JSON.stringify(videoGameQuotes, null, 2));
+                backlogChanged = true;
+                continue;
+              }
+
+              const tmpl = t.videoGameQuote;
+              const common = t.common;
+              issueTitle = tmpl.title
+                .replace('{emoji}', pickEmoji())
+                .replace('{id}', item.id);
+              issueTitle = addTitleAdjectives(issueTitle, tmpl.adjectives);
+
+              const instructions = t.buildInstructions(tmpl.file, tmpl.itemType, tmpl.prTitle).map((instr, i) => `${i + 1}. ${instr.replace(/{id}/g, item.id)}`);
+              const codeBlock = `\`\`\`json\n{\n  "japanese": "${item.japanese}",\n  "romaji": "${item.romaji}",\n  "english": "${item.english}",\n  "game": "${item.game}",\n  "character": "${item.character}"\n}\n\`\`\``;
+
+              issueBody = `${tmpl.header}\n\n**Category:** ${tmpl.category}  \n**Difficulty:** ${common.difficulty}  \n**Estimated Time:** ${tmpl.estimatedTime}\n\n---\n\n### Your Task\n\n${tmpl.taskDescription}\n\n${tmpl.gameQuoteHeader}\n\n| Japanese | Romaji | English |\n|----------|--------|---------|\n| **${item.japanese}** | ${item.romaji} | ${item.english} |\n\n**Game:** ${item.game}  \n**Character:** ${item.character}\n\n${common.instructionsHeader}\n\n${instructions.slice(0, 5).join('\n')}\n\n${codeBlock}\n\n${instructions.slice(5).join('\n')}\n\n---\n\n${common.footer}`;
+
+              const quoteIndex = videoGameQuotes.findIndex(function(q) { return q.id === item.id; });
+              videoGameQuotes[quoteIndex].issued = true;
+              fs.writeFileSync(videoGameQuotesBacklogPath, JSON.stringify(videoGameQuotes, null, 2));
               backlogChanged = true;
               } else if (nextType === 'idiom') {
               item = idioms.find(function(i) {

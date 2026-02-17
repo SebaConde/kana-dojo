@@ -1,0 +1,1202 @@
+[
+  {
+    "id": 1,
+    "japanese": "????????",
+    "romaji": "Mada owaran yo!",
+    "english": "I'm not done yet!",
+    "game": "Street Fighter",
+    "character": "M. Bison",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 2,
+    "japanese": "????",
+    "romaji": "Shoubu da!",
+    "english": "Let's settle this!",
+    "game": "Tekken",
+    "character": "Kazuya Mishima",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 3,
+    "japanese": "????",
+    "romaji": "Ikuzo!",
+    "english": "Let's go!",
+    "game": "Final Fantasy VII",
+    "character": "Cloud Strife",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 4,
+    "japanese": "??????",
+    "romaji": "Koko made da.",
+    "english": "This ends here.",
+    "game": "Metal Gear Solid",
+    "character": "Solid Snake",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 5,
+    "japanese": "???????",
+    "romaji": "Ore wa makenai.",
+    "english": "I won't lose.",
+    "game": "Persona 5",
+    "character": "Joker",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 6,
+    "japanese": "?????",
+    "romaji": "Kakugo shiro.",
+    "english": "Prepare yourself.",
+    "game": "Yakuza 0",
+    "character": "Kazuma Kiryu",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 7,
+    "japanese": "????????",
+    "romaji": "Mada owaran yo!",
+    "english": "I'm not done yet!",
+    "game": "Street Fighter",
+    "character": "M. Bison",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 8,
+    "japanese": "????",
+    "romaji": "Shoubu da!",
+    "english": "Let's settle this!",
+    "game": "Tekken",
+    "character": "Kazuya Mishima",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 9,
+    "japanese": "????",
+    "romaji": "Ikuzo!",
+    "english": "Let's go!",
+    "game": "Final Fantasy VII",
+    "character": "Cloud Strife",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 10,
+    "japanese": "??????",
+    "romaji": "Koko made da.",
+    "english": "This ends here.",
+    "game": "Metal Gear Solid",
+    "character": "Solid Snake",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 11,
+    "japanese": "???????",
+    "romaji": "Ore wa makenai.",
+    "english": "I won't lose.",
+    "game": "Persona 5",
+    "character": "Joker",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 12,
+    "japanese": "?????",
+    "romaji": "Kakugo shiro.",
+    "english": "Prepare yourself.",
+    "game": "Yakuza 0",
+    "character": "Kazuma Kiryu",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 13,
+    "japanese": "????????",
+    "romaji": "Mada owaran yo!",
+    "english": "I'm not done yet!",
+    "game": "Street Fighter",
+    "character": "M. Bison",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 14,
+    "japanese": "????",
+    "romaji": "Shoubu da!",
+    "english": "Let's settle this!",
+    "game": "Tekken",
+    "character": "Kazuya Mishima",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 15,
+    "japanese": "????",
+    "romaji": "Ikuzo!",
+    "english": "Let's go!",
+    "game": "Final Fantasy VII",
+    "character": "Cloud Strife",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 16,
+    "japanese": "??????",
+    "romaji": "Koko made da.",
+    "english": "This ends here.",
+    "game": "Metal Gear Solid",
+    "character": "Solid Snake",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 17,
+    "japanese": "???????",
+    "romaji": "Ore wa makenai.",
+    "english": "I won't lose.",
+    "game": "Persona 5",
+    "character": "Joker",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 18,
+    "japanese": "?????",
+    "romaji": "Kakugo shiro.",
+    "english": "Prepare yourself.",
+    "game": "Yakuza 0",
+    "character": "Kazuma Kiryu",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 19,
+    "japanese": "????????",
+    "romaji": "Mada owaran yo!",
+    "english": "I'm not done yet!",
+    "game": "Street Fighter",
+    "character": "M. Bison",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 20,
+    "japanese": "????",
+    "romaji": "Shoubu da!",
+    "english": "Let's settle this!",
+    "game": "Tekken",
+    "character": "Kazuya Mishima",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 21,
+    "japanese": "????",
+    "romaji": "Ikuzo!",
+    "english": "Let's go!",
+    "game": "Final Fantasy VII",
+    "character": "Cloud Strife",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 22,
+    "japanese": "??????",
+    "romaji": "Koko made da.",
+    "english": "This ends here.",
+    "game": "Metal Gear Solid",
+    "character": "Solid Snake",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 23,
+    "japanese": "???????",
+    "romaji": "Ore wa makenai.",
+    "english": "I won't lose.",
+    "game": "Persona 5",
+    "character": "Joker",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 24,
+    "japanese": "?????",
+    "romaji": "Kakugo shiro.",
+    "english": "Prepare yourself.",
+    "game": "Yakuza 0",
+    "character": "Kazuma Kiryu",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 25,
+    "japanese": "????????",
+    "romaji": "Mada owaran yo!",
+    "english": "I'm not done yet!",
+    "game": "Street Fighter",
+    "character": "M. Bison",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 26,
+    "japanese": "????",
+    "romaji": "Shoubu da!",
+    "english": "Let's settle this!",
+    "game": "Tekken",
+    "character": "Kazuya Mishima",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 27,
+    "japanese": "????",
+    "romaji": "Ikuzo!",
+    "english": "Let's go!",
+    "game": "Final Fantasy VII",
+    "character": "Cloud Strife",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 28,
+    "japanese": "??????",
+    "romaji": "Koko made da.",
+    "english": "This ends here.",
+    "game": "Metal Gear Solid",
+    "character": "Solid Snake",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 29,
+    "japanese": "???????",
+    "romaji": "Ore wa makenai.",
+    "english": "I won't lose.",
+    "game": "Persona 5",
+    "character": "Joker",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 30,
+    "japanese": "?????",
+    "romaji": "Kakugo shiro.",
+    "english": "Prepare yourself.",
+    "game": "Yakuza 0",
+    "character": "Kazuma Kiryu",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 31,
+    "japanese": "????????",
+    "romaji": "Mada owaran yo!",
+    "english": "I'm not done yet!",
+    "game": "Street Fighter",
+    "character": "M. Bison",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 32,
+    "japanese": "????",
+    "romaji": "Shoubu da!",
+    "english": "Let's settle this!",
+    "game": "Tekken",
+    "character": "Kazuya Mishima",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 33,
+    "japanese": "????",
+    "romaji": "Ikuzo!",
+    "english": "Let's go!",
+    "game": "Final Fantasy VII",
+    "character": "Cloud Strife",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 34,
+    "japanese": "??????",
+    "romaji": "Koko made da.",
+    "english": "This ends here.",
+    "game": "Metal Gear Solid",
+    "character": "Solid Snake",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 35,
+    "japanese": "???????",
+    "romaji": "Ore wa makenai.",
+    "english": "I won't lose.",
+    "game": "Persona 5",
+    "character": "Joker",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 36,
+    "japanese": "?????",
+    "romaji": "Kakugo shiro.",
+    "english": "Prepare yourself.",
+    "game": "Yakuza 0",
+    "character": "Kazuma Kiryu",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 37,
+    "japanese": "????????",
+    "romaji": "Mada owaran yo!",
+    "english": "I'm not done yet!",
+    "game": "Street Fighter",
+    "character": "M. Bison",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 38,
+    "japanese": "????",
+    "romaji": "Shoubu da!",
+    "english": "Let's settle this!",
+    "game": "Tekken",
+    "character": "Kazuya Mishima",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 39,
+    "japanese": "????",
+    "romaji": "Ikuzo!",
+    "english": "Let's go!",
+    "game": "Final Fantasy VII",
+    "character": "Cloud Strife",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 40,
+    "japanese": "??????",
+    "romaji": "Koko made da.",
+    "english": "This ends here.",
+    "game": "Metal Gear Solid",
+    "character": "Solid Snake",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 41,
+    "japanese": "???????",
+    "romaji": "Ore wa makenai.",
+    "english": "I won't lose.",
+    "game": "Persona 5",
+    "character": "Joker",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 42,
+    "japanese": "?????",
+    "romaji": "Kakugo shiro.",
+    "english": "Prepare yourself.",
+    "game": "Yakuza 0",
+    "character": "Kazuma Kiryu",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 43,
+    "japanese": "????????",
+    "romaji": "Mada owaran yo!",
+    "english": "I'm not done yet!",
+    "game": "Street Fighter",
+    "character": "M. Bison",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 44,
+    "japanese": "????",
+    "romaji": "Shoubu da!",
+    "english": "Let's settle this!",
+    "game": "Tekken",
+    "character": "Kazuya Mishima",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 45,
+    "japanese": "????",
+    "romaji": "Ikuzo!",
+    "english": "Let's go!",
+    "game": "Final Fantasy VII",
+    "character": "Cloud Strife",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 46,
+    "japanese": "??????",
+    "romaji": "Koko made da.",
+    "english": "This ends here.",
+    "game": "Metal Gear Solid",
+    "character": "Solid Snake",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 47,
+    "japanese": "???????",
+    "romaji": "Ore wa makenai.",
+    "english": "I won't lose.",
+    "game": "Persona 5",
+    "character": "Joker",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 48,
+    "japanese": "?????",
+    "romaji": "Kakugo shiro.",
+    "english": "Prepare yourself.",
+    "game": "Yakuza 0",
+    "character": "Kazuma Kiryu",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 49,
+    "japanese": "????????",
+    "romaji": "Mada owaran yo!",
+    "english": "I'm not done yet!",
+    "game": "Street Fighter",
+    "character": "M. Bison",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 50,
+    "japanese": "????",
+    "romaji": "Shoubu da!",
+    "english": "Let's settle this!",
+    "game": "Tekken",
+    "character": "Kazuya Mishima",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 51,
+    "japanese": "????",
+    "romaji": "Ikuzo!",
+    "english": "Let's go!",
+    "game": "Final Fantasy VII",
+    "character": "Cloud Strife",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 52,
+    "japanese": "??????",
+    "romaji": "Koko made da.",
+    "english": "This ends here.",
+    "game": "Metal Gear Solid",
+    "character": "Solid Snake",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 53,
+    "japanese": "???????",
+    "romaji": "Ore wa makenai.",
+    "english": "I won't lose.",
+    "game": "Persona 5",
+    "character": "Joker",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 54,
+    "japanese": "?????",
+    "romaji": "Kakugo shiro.",
+    "english": "Prepare yourself.",
+    "game": "Yakuza 0",
+    "character": "Kazuma Kiryu",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 55,
+    "japanese": "????????",
+    "romaji": "Mada owaran yo!",
+    "english": "I'm not done yet!",
+    "game": "Street Fighter",
+    "character": "M. Bison",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 56,
+    "japanese": "????",
+    "romaji": "Shoubu da!",
+    "english": "Let's settle this!",
+    "game": "Tekken",
+    "character": "Kazuya Mishima",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 57,
+    "japanese": "????",
+    "romaji": "Ikuzo!",
+    "english": "Let's go!",
+    "game": "Final Fantasy VII",
+    "character": "Cloud Strife",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 58,
+    "japanese": "??????",
+    "romaji": "Koko made da.",
+    "english": "This ends here.",
+    "game": "Metal Gear Solid",
+    "character": "Solid Snake",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 59,
+    "japanese": "???????",
+    "romaji": "Ore wa makenai.",
+    "english": "I won't lose.",
+    "game": "Persona 5",
+    "character": "Joker",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 60,
+    "japanese": "?????",
+    "romaji": "Kakugo shiro.",
+    "english": "Prepare yourself.",
+    "game": "Yakuza 0",
+    "character": "Kazuma Kiryu",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 61,
+    "japanese": "????????",
+    "romaji": "Mada owaran yo!",
+    "english": "I'm not done yet!",
+    "game": "Street Fighter",
+    "character": "M. Bison",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 62,
+    "japanese": "????",
+    "romaji": "Shoubu da!",
+    "english": "Let's settle this!",
+    "game": "Tekken",
+    "character": "Kazuya Mishima",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 63,
+    "japanese": "????",
+    "romaji": "Ikuzo!",
+    "english": "Let's go!",
+    "game": "Final Fantasy VII",
+    "character": "Cloud Strife",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 64,
+    "japanese": "??????",
+    "romaji": "Koko made da.",
+    "english": "This ends here.",
+    "game": "Metal Gear Solid",
+    "character": "Solid Snake",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 65,
+    "japanese": "???????",
+    "romaji": "Ore wa makenai.",
+    "english": "I won't lose.",
+    "game": "Persona 5",
+    "character": "Joker",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 66,
+    "japanese": "?????",
+    "romaji": "Kakugo shiro.",
+    "english": "Prepare yourself.",
+    "game": "Yakuza 0",
+    "character": "Kazuma Kiryu",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 67,
+    "japanese": "????????",
+    "romaji": "Mada owaran yo!",
+    "english": "I'm not done yet!",
+    "game": "Street Fighter",
+    "character": "M. Bison",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 68,
+    "japanese": "????",
+    "romaji": "Shoubu da!",
+    "english": "Let's settle this!",
+    "game": "Tekken",
+    "character": "Kazuya Mishima",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 69,
+    "japanese": "????",
+    "romaji": "Ikuzo!",
+    "english": "Let's go!",
+    "game": "Final Fantasy VII",
+    "character": "Cloud Strife",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 70,
+    "japanese": "??????",
+    "romaji": "Koko made da.",
+    "english": "This ends here.",
+    "game": "Metal Gear Solid",
+    "character": "Solid Snake",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 71,
+    "japanese": "???????",
+    "romaji": "Ore wa makenai.",
+    "english": "I won't lose.",
+    "game": "Persona 5",
+    "character": "Joker",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 72,
+    "japanese": "?????",
+    "romaji": "Kakugo shiro.",
+    "english": "Prepare yourself.",
+    "game": "Yakuza 0",
+    "character": "Kazuma Kiryu",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 73,
+    "japanese": "????????",
+    "romaji": "Mada owaran yo!",
+    "english": "I'm not done yet!",
+    "game": "Street Fighter",
+    "character": "M. Bison",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 74,
+    "japanese": "????",
+    "romaji": "Shoubu da!",
+    "english": "Let's settle this!",
+    "game": "Tekken",
+    "character": "Kazuya Mishima",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 75,
+    "japanese": "????",
+    "romaji": "Ikuzo!",
+    "english": "Let's go!",
+    "game": "Final Fantasy VII",
+    "character": "Cloud Strife",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 76,
+    "japanese": "??????",
+    "romaji": "Koko made da.",
+    "english": "This ends here.",
+    "game": "Metal Gear Solid",
+    "character": "Solid Snake",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 77,
+    "japanese": "???????",
+    "romaji": "Ore wa makenai.",
+    "english": "I won't lose.",
+    "game": "Persona 5",
+    "character": "Joker",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 78,
+    "japanese": "?????",
+    "romaji": "Kakugo shiro.",
+    "english": "Prepare yourself.",
+    "game": "Yakuza 0",
+    "character": "Kazuma Kiryu",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 79,
+    "japanese": "????????",
+    "romaji": "Mada owaran yo!",
+    "english": "I'm not done yet!",
+    "game": "Street Fighter",
+    "character": "M. Bison",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 80,
+    "japanese": "????",
+    "romaji": "Shoubu da!",
+    "english": "Let's settle this!",
+    "game": "Tekken",
+    "character": "Kazuya Mishima",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 81,
+    "japanese": "????",
+    "romaji": "Ikuzo!",
+    "english": "Let's go!",
+    "game": "Final Fantasy VII",
+    "character": "Cloud Strife",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 82,
+    "japanese": "??????",
+    "romaji": "Koko made da.",
+    "english": "This ends here.",
+    "game": "Metal Gear Solid",
+    "character": "Solid Snake",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 83,
+    "japanese": "???????",
+    "romaji": "Ore wa makenai.",
+    "english": "I won't lose.",
+    "game": "Persona 5",
+    "character": "Joker",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 84,
+    "japanese": "?????",
+    "romaji": "Kakugo shiro.",
+    "english": "Prepare yourself.",
+    "game": "Yakuza 0",
+    "character": "Kazuma Kiryu",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 85,
+    "japanese": "????????",
+    "romaji": "Mada owaran yo!",
+    "english": "I'm not done yet!",
+    "game": "Street Fighter",
+    "character": "M. Bison",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 86,
+    "japanese": "????",
+    "romaji": "Shoubu da!",
+    "english": "Let's settle this!",
+    "game": "Tekken",
+    "character": "Kazuya Mishima",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 87,
+    "japanese": "????",
+    "romaji": "Ikuzo!",
+    "english": "Let's go!",
+    "game": "Final Fantasy VII",
+    "character": "Cloud Strife",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 88,
+    "japanese": "??????",
+    "romaji": "Koko made da.",
+    "english": "This ends here.",
+    "game": "Metal Gear Solid",
+    "character": "Solid Snake",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 89,
+    "japanese": "???????",
+    "romaji": "Ore wa makenai.",
+    "english": "I won't lose.",
+    "game": "Persona 5",
+    "character": "Joker",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 90,
+    "japanese": "?????",
+    "romaji": "Kakugo shiro.",
+    "english": "Prepare yourself.",
+    "game": "Yakuza 0",
+    "character": "Kazuma Kiryu",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 91,
+    "japanese": "????????",
+    "romaji": "Mada owaran yo!",
+    "english": "I'm not done yet!",
+    "game": "Street Fighter",
+    "character": "M. Bison",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 92,
+    "japanese": "????",
+    "romaji": "Shoubu da!",
+    "english": "Let's settle this!",
+    "game": "Tekken",
+    "character": "Kazuya Mishima",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 93,
+    "japanese": "????",
+    "romaji": "Ikuzo!",
+    "english": "Let's go!",
+    "game": "Final Fantasy VII",
+    "character": "Cloud Strife",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 94,
+    "japanese": "??????",
+    "romaji": "Koko made da.",
+    "english": "This ends here.",
+    "game": "Metal Gear Solid",
+    "character": "Solid Snake",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 95,
+    "japanese": "???????",
+    "romaji": "Ore wa makenai.",
+    "english": "I won't lose.",
+    "game": "Persona 5",
+    "character": "Joker",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 96,
+    "japanese": "?????",
+    "romaji": "Kakugo shiro.",
+    "english": "Prepare yourself.",
+    "game": "Yakuza 0",
+    "character": "Kazuma Kiryu",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 97,
+    "japanese": "????????",
+    "romaji": "Mada owaran yo!",
+    "english": "I'm not done yet!",
+    "game": "Street Fighter",
+    "character": "M. Bison",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 98,
+    "japanese": "????",
+    "romaji": "Shoubu da!",
+    "english": "Let's settle this!",
+    "game": "Tekken",
+    "character": "Kazuya Mishima",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 99,
+    "japanese": "????",
+    "romaji": "Ikuzo!",
+    "english": "Let's go!",
+    "game": "Final Fantasy VII",
+    "character": "Cloud Strife",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 100,
+    "japanese": "??????",
+    "romaji": "Koko made da.",
+    "english": "This ends here.",
+    "game": "Metal Gear Solid",
+    "character": "Solid Snake",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 101,
+    "japanese": "???????",
+    "romaji": "Ore wa makenai.",
+    "english": "I won't lose.",
+    "game": "Persona 5",
+    "character": "Joker",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 102,
+    "japanese": "?????",
+    "romaji": "Kakugo shiro.",
+    "english": "Prepare yourself.",
+    "game": "Yakuza 0",
+    "character": "Kazuma Kiryu",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 103,
+    "japanese": "????????",
+    "romaji": "Mada owaran yo!",
+    "english": "I'm not done yet!",
+    "game": "Street Fighter",
+    "character": "M. Bison",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 104,
+    "japanese": "????",
+    "romaji": "Shoubu da!",
+    "english": "Let's settle this!",
+    "game": "Tekken",
+    "character": "Kazuya Mishima",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 105,
+    "japanese": "????",
+    "romaji": "Ikuzo!",
+    "english": "Let's go!",
+    "game": "Final Fantasy VII",
+    "character": "Cloud Strife",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 106,
+    "japanese": "??????",
+    "romaji": "Koko made da.",
+    "english": "This ends here.",
+    "game": "Metal Gear Solid",
+    "character": "Solid Snake",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 107,
+    "japanese": "???????",
+    "romaji": "Ore wa makenai.",
+    "english": "I won't lose.",
+    "game": "Persona 5",
+    "character": "Joker",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 108,
+    "japanese": "?????",
+    "romaji": "Kakugo shiro.",
+    "english": "Prepare yourself.",
+    "game": "Yakuza 0",
+    "character": "Kazuma Kiryu",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 109,
+    "japanese": "????????",
+    "romaji": "Mada owaran yo!",
+    "english": "I'm not done yet!",
+    "game": "Street Fighter",
+    "character": "M. Bison",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 110,
+    "japanese": "????",
+    "romaji": "Shoubu da!",
+    "english": "Let's settle this!",
+    "game": "Tekken",
+    "character": "Kazuya Mishima",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 111,
+    "japanese": "????",
+    "romaji": "Ikuzo!",
+    "english": "Let's go!",
+    "game": "Final Fantasy VII",
+    "character": "Cloud Strife",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 112,
+    "japanese": "??????",
+    "romaji": "Koko made da.",
+    "english": "This ends here.",
+    "game": "Metal Gear Solid",
+    "character": "Solid Snake",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 113,
+    "japanese": "???????",
+    "romaji": "Ore wa makenai.",
+    "english": "I won't lose.",
+    "game": "Persona 5",
+    "character": "Joker",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 114,
+    "japanese": "?????",
+    "romaji": "Kakugo shiro.",
+    "english": "Prepare yourself.",
+    "game": "Yakuza 0",
+    "character": "Kazuma Kiryu",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 115,
+    "japanese": "????????",
+    "romaji": "Mada owaran yo!",
+    "english": "I'm not done yet!",
+    "game": "Street Fighter",
+    "character": "M. Bison",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 116,
+    "japanese": "????",
+    "romaji": "Shoubu da!",
+    "english": "Let's settle this!",
+    "game": "Tekken",
+    "character": "Kazuya Mishima",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 117,
+    "japanese": "????",
+    "romaji": "Ikuzo!",
+    "english": "Let's go!",
+    "game": "Final Fantasy VII",
+    "character": "Cloud Strife",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 118,
+    "japanese": "??????",
+    "romaji": "Koko made da.",
+    "english": "This ends here.",
+    "game": "Metal Gear Solid",
+    "character": "Solid Snake",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 119,
+    "japanese": "???????",
+    "romaji": "Ore wa makenai.",
+    "english": "I won't lose.",
+    "game": "Persona 5",
+    "character": "Joker",
+    "issued": false,
+    "completed": false
+  },
+  {
+    "id": 120,
+    "japanese": "?????",
+    "romaji": "Kakugo shiro.",
+    "english": "Prepare yourself.",
+    "game": "Yakuza 0",
+    "character": "Kazuma Kiryu",
+    "issued": false,
+    "completed": false
+  }
+]

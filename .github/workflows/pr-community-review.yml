@@ -21,7 +21,7 @@ jobs:
     # Skip automation PRs to save GitHub Actions minutes - only review external contributor PRs
     if: |
       !startsWith(github.event.pull_request.head.ref, 'automation/') &&
-      (contains(github.event.pull_request.title, 'theme') || contains(github.event.pull_request.title, 'fact') || contains(github.event.pull_request.title, 'Theme') || contains(github.event.pull_request.title, 'Fact') || contains(github.event.pull_request.title, 'proverb') || contains(github.event.pull_request.title, 'Proverb') || contains(github.event.pull_request.title, 'trivia') || contains(github.event.pull_request.title, 'Trivia') || contains(github.event.pull_request.title, 'grammar') || contains(github.event.pull_request.title, 'Grammar') || contains(github.event.pull_request.title, 'anime quote') || contains(github.event.pull_request.title, 'Anime Quote') || contains(github.event.pull_request.title, 'anime-quote') || contains(github.event.pull_request.title, 'Anime-Quote') || contains(github.event.pull_request.title, 'idiom') || contains(github.event.pull_request.title, 'Idiom') || contains(github.event.pull_request.title, 'regional dialect') || contains(github.event.pull_request.title, 'Regional Dialect') || contains(github.event.pull_request.title, 'regional-dialect') || contains(github.event.pull_request.title, 'Regional-Dialect') || contains(github.event.pull_request.title, 'false friend') || contains(github.event.pull_request.title, 'False Friend') || contains(github.event.pull_request.title, 'cultural etiquette') || contains(github.event.pull_request.title, 'Cultural Etiquette') || contains(github.event.pull_request.title, 'example sentence') || contains(github.event.pull_request.title, 'Example Sentence') || contains(github.event.pull_request.title, 'common mistake') || contains(github.event.pull_request.title, 'Common Mistake'))
+      (contains(github.event.pull_request.title, 'theme') || contains(github.event.pull_request.title, 'fact') || contains(github.event.pull_request.title, 'Theme') || contains(github.event.pull_request.title, 'Fact') || contains(github.event.pull_request.title, 'proverb') || contains(github.event.pull_request.title, 'Proverb') || contains(github.event.pull_request.title, 'trivia') || contains(github.event.pull_request.title, 'Trivia') || contains(github.event.pull_request.title, 'grammar') || contains(github.event.pull_request.title, 'Grammar') || contains(github.event.pull_request.title, 'anime quote') || contains(github.event.pull_request.title, 'Anime Quote') || contains(github.event.pull_request.title, 'anime-quote') || contains(github.event.pull_request.title, 'Anime-Quote') || contains(github.event.pull_request.title, 'idiom') || contains(github.event.pull_request.title, 'Idiom') || contains(github.event.pull_request.title, 'regional dialect') || contains(github.event.pull_request.title, 'Regional Dialect') || contains(github.event.pull_request.title, 'regional-dialect') || contains(github.event.pull_request.title, 'Regional-Dialect') || contains(github.event.pull_request.title, 'false friend') || contains(github.event.pull_request.title, 'False Friend') || contains(github.event.pull_request.title, 'cultural etiquette') || contains(github.event.pull_request.title, 'Cultural Etiquette') || contains(github.event.pull_request.title, 'example sentence') || contains(github.event.pull_request.title, 'Example Sentence') || contains(github.event.pull_request.title, 'common mistake') || contains(github.event.pull_request.title, 'Common Mistake') || contains(github.event.pull_request.title, 'video game quote') || contains(github.event.pull_request.title, 'Video Game Quote') || contains(github.event.pull_request.title, 'videogame quote') || contains(github.event.pull_request.title, 'Videogame Quote'))
 
     steps:
       - name: Checkout base branch
@@ -104,8 +104,9 @@ jobs:
             const isCulturalEtiquetteContribution = prTitleLower.includes('cultural etiquette') || prTitleLower.includes('cultural-etiquette');
             const isExampleSentenceContribution = prTitleLower.includes('example sentence') || prTitleLower.includes('example-sentence');
             const isCommonMistakeContribution = prTitleLower.includes('common mistake') || prTitleLower.includes('common-mistake');
+            const isVideoGameQuoteContribution = prTitleLower.includes('video game quote') || prTitleLower.includes('videogame quote') || prTitleLower.includes('video-game-quote');
 
-            if (!isThemeContribution && !isFactContribution && !isProverbContribution && !isTriviaContribution && !isGrammarContribution && !isAnimeQuoteContribution && !isIdiomContribution && !isRegionalDialectContribution && !isFalseFriendContribution && !isCulturalEtiquetteContribution && !isExampleSentenceContribution && !isCommonMistakeContribution) {
+            if (!isThemeContribution && !isFactContribution && !isProverbContribution && !isTriviaContribution && !isGrammarContribution && !isAnimeQuoteContribution && !isIdiomContribution && !isRegionalDialectContribution && !isFalseFriendContribution && !isCulturalEtiquetteContribution && !isExampleSentenceContribution && !isCommonMistakeContribution && !isVideoGameQuoteContribution) {
               console.log('Not a community contribution PR');
               return;
             }
@@ -261,6 +262,15 @@ jobs:
                 if (idMatch) {
                   const id = idMatch[1];
                   const matches = await searchOpenCommunityIssues(`"Add Common Japanese Learner Mistake #${id}"`);
+                  if (matches.length > 0) {
+                    foundIssue = matches[0].number;
+                  }
+                }
+              } else if (isVideoGameQuoteContribution) {
+                const idMatch = prTitle.match(/#(\d+)/);
+                if (idMatch) {
+                  const id = idMatch[1];
+                  const matches = await searchOpenCommunityIssues(`"Add Famous Japanese Video Game Quote #${id}"`);
                   if (matches.length > 0) {
                     foundIssue = matches[0].number;
                   }
@@ -694,6 +704,29 @@ jobs:
                 }
               } catch (e) {
                 errors.push(`Error reading common mistakes file: ${e.message}`);
+              }
+            } else if (isVideoGameQuoteContribution) {
+              validationType = 'video game quote';
+              const allowed = ['community/content/japanese-videogame-quotes.json'];
+              const changed = reviewedFiles.map(function(f) { return f.filename; });
+              const invalidFiles = changed.filter(function(p) { return !allowed.includes(p); });
+              if (changed.length !== 1 || invalidFiles.length > 0) {
+                errors.push('Video game quote PRs must modify only community/content/japanese-videogame-quotes.json');
+              }
+              try {
+                const fp = 'pr-head/community/content/japanese-videogame-quotes.json';
+                if (!fs.existsSync(fp)) {
+                  errors.push('japanese-videogame-quotes.json file not found in PR');
+                } else {
+                  const items = JSON.parse(fs.readFileSync(fp, 'utf8'));
+                  if (!Array.isArray(items)) {
+                    errors.push('japanese-videogame-quotes.json should be an array');
+                  } else if (items.some(function(i) { return !i.japanese || !i.romaji || !i.english || !i.game || !i.character; })) {
+                    errors.push('Each video game quote must have japanese, romaji, english, game, and character fields');
+                  }
+                }
+              } catch (e) {
+                errors.push(`Error reading video game quotes file: ${e.message}`);
               }
 
             isValid = errors.length === 0;

@@ -651,6 +651,23 @@ module.exports = {
       itemType: 'common mistake object',
       prTitle: 'content: add new common mistake',
     },
+    videoGameQuote: {
+      title:
+        '[Good First Issue] {emoji} Add Famous Japanese Video Game Quote {id} (good-first-issue, <1 min)',
+      adjectives: [
+        'iconic','memorable','expressive','dramatic','cultural','engaging','authentic','fun','well-known','powerful',
+        'meaningful','timeless','learner-friendly','vivid','popular','emotional','high-impact','clear','stylish','high-quality',
+      ],
+      header: '## Add Famous Japanese Video Game Quote',
+      category: 'Community Contribution - Video Game Quote',
+      estimatedTime: '<1 min',
+      taskDescription:
+        'Add this iconic Japanese game quote so learners can enjoy game culture while studying!',
+      gameQuoteHeader: '### The Video Game Quote',
+      file: 'community/content/japanese-videogame-quotes.json',
+      itemType: 'video game quote object',
+      prTitle: 'content: add video game quote',
+    },
     animeQuote: {
       title:
         '[Good First Issue] {emoji} Add Famous Anime Quote {id} (good-first-issue, <1 min)',

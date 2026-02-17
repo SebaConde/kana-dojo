@@ -48,6 +48,7 @@ jobs:
             const culturalEtiquetteBacklogPath = 'community/backlog/cultural-etiquette-backlog.json';
             const exampleSentencesBacklogPath = 'community/backlog/example-sentences-backlog.json';
             const commonMistakesBacklogPath = 'community/backlog/common-mistakes-backlog.json';
+            const videoGameQuotesBacklogPath = 'community/backlog/video-game-quotes-backlog.json';
 
             const prTitle = context.payload.pull_request.title;
             const prTitleLower = prTitle.toLowerCase();
@@ -67,8 +68,9 @@ jobs:
             const isCulturalEtiquetteContribution = prTitleLower.includes('cultural etiquette') || prTitleLower.includes('cultural-etiquette');
             const isExampleSentenceContribution = prTitleLower.includes('example sentence') || prTitleLower.includes('example-sentence');
             const isCommonMistakeContribution = prTitleLower.includes('common mistake') || prTitleLower.includes('common-mistake');
+            const isVideoGameQuoteContribution = prTitleLower.includes('video game quote') || prTitleLower.includes('videogame quote') || prTitleLower.includes('video-game-quote');
 
-            if (!isThemeContribution && !isFactContribution && !isProverbContribution && !isTriviaContribution && !isGrammarContribution && !isAnimeQuoteContribution && !isIdiomContribution && !isRegionalDialectContribution && !isFalseFriendContribution && !isCulturalEtiquetteContribution && !isExampleSentenceContribution && !isCommonMistakeContribution) {
+            if (!isThemeContribution && !isFactContribution && !isProverbContribution && !isTriviaContribution && !isGrammarContribution && !isAnimeQuoteContribution && !isIdiomContribution && !isRegionalDialectContribution && !isFalseFriendContribution && !isCulturalEtiquetteContribution && !isExampleSentenceContribution && !isCommonMistakeContribution && !isVideoGameQuoteContribution) {
               console.log('Not a community contribution PR, skipping');
               core.setOutput('should_commit', 'false');
               return;
@@ -227,6 +229,15 @@ jobs:
                 const id = idMatch ? idMatch[1] : null;
                 if (id) {
                   const matches = await searchOpenCommunityIssues(`"Add Common Japanese Learner Mistake #${id}"`);
+                  if (matches.length > 0) {
+                    targetIssue = matches[0].number;
+                  }
+                }
+              } else if (isVideoGameQuoteContribution) {
+                const idMatch = prTitle.match(/#(\d+)/);
+                const id = idMatch ? idMatch[1] : null;
+                if (id) {
+                  const matches = await searchOpenCommunityIssues(`"Add Famous Japanese Video Game Quote #${id}"`);
                   if (matches.length > 0) {
                     targetIssue = matches[0].number;
                   }
@@ -486,6 +497,23 @@ jobs:
                       fs.writeFileSync(commonMistakesBacklogPath, JSON.stringify(items, null, 2));
                       needsCommit = true;
                       console.log(`Marked common mistake #${id} as completed`);
+                    }
+                  }
+                } else if (isVideoGameQuoteContribution) {
+                  const items = JSON.parse(fs.readFileSync(videoGameQuotesBacklogPath, 'utf8'));
+                  const issueMatch = issueTitle.match(/Add Famous Japanese Video Game Quote\s*#(\d+)/i);
+                  const prMatch = prTitle.match(/#(\d+)/);
+                  const id = issueMatch ? parseInt(issueMatch[1]) : (prMatch ? parseInt(prMatch[1]) : null);
+
+                  if (id !== null) {
+                    const idx = items.findIndex(function(i) { return i.id === id; });
+                    if (idx !== -1) {
+                      items[idx].completed = true;
+                      items[idx].completedBy = prAuthor;
+                      items[idx].completedPR = prNumber;
+                      fs.writeFileSync(videoGameQuotesBacklogPath, JSON.stringify(items, null, 2));
+                      needsCommit = true;
+                      console.log(`Marked video game quote #${id} as completed`);
                     }
                   }
                 }
