@@ -25,6 +25,7 @@ export interface ProgressSyncRequestBody {
 export interface ProgressSyncRecord extends ProgressSyncRequestBody {
   schemaVersion: 1;
   serverUpdatedAt: string;
+  updatedAtMs?: number;
 }
 
 type ValidationErrorCode = 'INVALID_PAYLOAD' | 'PAYLOAD_TOO_LARGE';
@@ -50,11 +51,17 @@ function isPlainObject(value: unknown): value is Record<string, unknown> {
   return typeof value === 'object' && value !== null && !Array.isArray(value);
 }
 
-function isValidIsoDate(value: unknown): value is string {
+function parseIsoDateMs(value: unknown): number | null {
   if (typeof value !== 'string' || !ISO_8601_PATTERN.test(value)) {
-    return false;
+    return null;
   }
-  return Number.isFinite(Date.parse(value));
+
+  const parsed = Date.parse(value);
+  return Number.isFinite(parsed) ? parsed : null;
+}
+
+function isValidIsoDate(value: unknown): value is string {
+  return parseIsoDateMs(value) !== null;
 }
 
 function isValidProgressSnapshot(value: unknown): value is ProgressSnapshot {
@@ -139,7 +146,8 @@ export function validateProgressSyncRequestBody(
     };
   }
 
-  if (!isValidIsoDate(body.updatedAt)) {
+  const updatedAtMs = parseIsoDateMs(body.updatedAt);
+  if (updatedAtMs === null) {
     return {
       ok: false,
       error: {
@@ -163,7 +171,7 @@ export function validateProgressSyncRequestBody(
   return {
     ok: true,
     value: {
-      updatedAt: body.updatedAt,
+      updatedAt: new Date(updatedAtMs).toISOString(),
       snapshot: body.snapshot,
     },
   };
@@ -177,16 +185,37 @@ export function isProgressSyncRecord(
   if (!isValidIsoDate(value.serverUpdatedAt)) return false;
   if (!isValidIsoDate(value.updatedAt)) return false;
   if (!isValidProgressSnapshot(value.snapshot)) return false;
+  if (
+    value.updatedAtMs !== undefined &&
+    (typeof value.updatedAtMs !== 'number' ||
+      !Number.isFinite(value.updatedAtMs))
+  ) {
+    return false;
+  }
   return true;
+}
+
+export function getProgressUpdatedAtMs(value: {
+  updatedAt: string;
+  updatedAtMs?: number;
+}): number | null {
+  if (
+    typeof value.updatedAtMs === 'number' &&
+    Number.isFinite(value.updatedAtMs)
+  ) {
+    return value.updatedAtMs;
+  }
+
+  return parseIsoDateMs(value.updatedAt);
 }
 
 export function shouldAcceptIncomingUpdate(
   existingUpdatedAt: string,
   incomingUpdatedAt: string,
 ): boolean {
-  const existingTs = Date.parse(existingUpdatedAt);
-  const incomingTs = Date.parse(incomingUpdatedAt);
-  if (!Number.isFinite(existingTs) || !Number.isFinite(incomingTs)) {
+  const existingTs = parseIsoDateMs(existingUpdatedAt);
+  const incomingTs = parseIsoDateMs(incomingUpdatedAt);
+  if (existingTs === null || incomingTs === null) {
     return false;
   }
   return incomingTs >= existingTs;

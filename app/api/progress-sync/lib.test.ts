@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import {
   buildProgressSyncStorageKey,
+  getProgressUpdatedAtMs,
   MAX_SYNC_PAYLOAD_BYTES,
   normalizeSyncKey,
   shouldAcceptIncomingUpdate,
@@ -49,6 +50,9 @@ describe('progress-sync/lib', () => {
       const result = validateProgressSyncRequestBody(validSyncBody);
 
       expect(result.ok).toBe(true);
+      if (result.ok) {
+        expect(result.value.updatedAt).toBe('2026-02-20T12:00:00.000Z');
+      }
     });
 
     it('rejects non-object payloads', () => {
@@ -126,6 +130,25 @@ describe('progress-sync/lib', () => {
           '2026-02-20T12:00:00.000Z',
         ),
       ).toBe(false);
+    });
+  });
+
+  describe('getProgressUpdatedAtMs', () => {
+    it('prefers updatedAtMs when provided and valid', () => {
+      expect(
+        getProgressUpdatedAtMs({
+          updatedAt: '2026-02-20T12:00:00.000Z',
+          updatedAtMs: 1000,
+        }),
+      ).toBe(1000);
+    });
+
+    it('falls back to parsing updatedAt when updatedAtMs is missing', () => {
+      expect(
+        getProgressUpdatedAtMs({
+          updatedAt: '2026-02-20T12:00:00.000Z',
+        }),
+      ).toBe(Date.parse('2026-02-20T12:00:00.000Z'));
     });
   });
 });

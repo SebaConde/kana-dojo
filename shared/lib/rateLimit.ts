@@ -49,6 +49,14 @@ export const ANALYZE_RATE_LIMIT_CONFIG: RateLimitConfig = {
   maxTrackedIPs: 10000,
 };
 
+// Config for progress sync API (larger payloads, stricter abuse controls)
+export const PROGRESS_SYNC_RATE_LIMIT_CONFIG: RateLimitConfig = {
+  maxRequests: 20, // 20 requests per minute per IP
+  windowMs: 60 * 1000,
+  dailyLimit: 500, // 500 requests per day per IP
+  maxTrackedIPs: 10000,
+};
+
 // Global rate limiting (fallback when IP tracking fails)
 export const GLOBAL_RATE_LIMIT_CONFIG: RateLimitConfig = {
   maxRequests: 100, // 100 total requests per minute globally
@@ -396,6 +404,7 @@ async function checkRateLimitWithFallback(
 // Singleton instances for each API endpoint
 let translateRateLimiter: RateLimiter | null = null;
 let analyzeRateLimiter: RateLimiter | null = null;
+let progressSyncRateLimiter: RateLimiter | null = null;
 
 /**
  * Get the rate limiter for translate API
@@ -415,6 +424,16 @@ export function getAnalyzeRateLimiter(): RateLimiter {
     analyzeRateLimiter = new RateLimiter(ANALYZE_RATE_LIMIT_CONFIG);
   }
   return analyzeRateLimiter;
+}
+
+/**
+ * Get the rate limiter for progress-sync API
+ */
+export function getProgressSyncRateLimiter(): RateLimiter {
+  if (!progressSyncRateLimiter) {
+    progressSyncRateLimiter = new RateLimiter(PROGRESS_SYNC_RATE_LIMIT_CONFIG);
+  }
+  return progressSyncRateLimiter;
 }
 
 export async function checkTranslateRateLimit(
@@ -437,6 +456,18 @@ export async function checkAnalyzeRateLimit(
     identifier,
     ANALYZE_RATE_LIMIT_CONFIG,
     'analyze',
+    limiter,
+  );
+}
+
+export async function checkProgressSyncRateLimit(
+  identifier: string,
+): Promise<RateLimitResult> {
+  const limiter = getProgressSyncRateLimiter();
+  return checkRateLimitWithFallback(
+    identifier,
+    PROGRESS_SYNC_RATE_LIMIT_CONFIG,
+    'progress-sync',
     limiter,
   );
 }
