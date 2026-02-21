@@ -1459,7 +1459,9 @@
     "mainColor": "oklch(58.0% 0.165 140.0 / 1)",
     "secondaryColor": "oklch(72.0% 0.115 95.0 / 1)",
     "issued": true,
-    "completed": false
+    "completed": true,
+    "completedBy": "Phourtie-Phour",
+    "completedPR": 5612
   },
   {
     "id": "taisho-cafe",
