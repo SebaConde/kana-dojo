@@ -1353,7 +1353,9 @@
     "mainColor": "oklch(78.0% 0.135 215.0 / 1)",
     "secondaryColor": "oklch(85.0% 0.155 90.0 / 1)",
     "issued": true,
-    "completed": false
+    "completed": true,
+    "completedBy": "z5005z-hue",
+    "completedPR": 5741
   },
   {
     "id": "cedar-incense",
