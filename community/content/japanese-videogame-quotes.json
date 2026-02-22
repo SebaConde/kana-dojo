@@ -252,11 +252,11 @@
     "character": "Tidus"
   },
   {
-  "japanese": "????????",
-  "romaji": "Saa, hajimeyou.",
-  "english": "Now, let's begin.",
-  "game": "Final Fantasy X",
-  "character": "Tidus"
+    "japanese": "????????",
+    "romaji": "Saa, hajimeyou.",
+    "english": "Now, let's begin.",
+    "game": "Final Fantasy X",
+    "character": "Tidus"
   },
   {
     "japanese": "???????",
@@ -264,5 +264,12 @@
     "english": "I'll fight to the very end.",
     "game": "Kingdom Hearts",
     "character": "Riku"
+  },
+  {
+    "japanese": "危ないところだったな",
+    "romaji": "Abunai tokoro datta na.",
+    "english": "That was a close call.",
+    "game": "The Legend of Zelda",
+    "character": "Link"
   }
 ]
