@@ -1,338 +1,345 @@
 [
   {
-    "japanese": "諦めないってばよ!",
+    "japanese": "\u8ae6\u3081\u306a\u3044\u3063\u3066\u3070\u3088!",
     "romaji": "Akiramenai tte bayo!",
     "english": "I never give up, believe it!",
     "anime": "Naruto",
     "character": "Naruto Uzumaki"
   },
   {
-    "japanese": "オレ様の美技にブギウギ",
+    "japanese": "\u30aa\u30ec\u69d8\u306e\u7f8e\u6280\u306b\u30d6\u30ae\u30a6\u30ae",
     "romaji": "Ore-sama no bigi ni bugiugi",
     "english": "Dance to my beautiful technique!",
     "anime": "The Prince of Tennis",
     "character": "Keigo Atobe"
   },
   {
-    "japanese": "痛みを伴わない教訓には意味がない",
+    "japanese": "\u75db\u307f\u3092\u4f34\u308f\u306a\u3044\u6559\u8a13\u306b\u306f\u610f\u5473\u304c\u306a\u3044",
     "romaji": "Itami o tomonawanai kyoukun ni wa imi ga nai",
     "english": "A lesson without pain is meaningless.",
     "anime": "Fullmetal Alchemist: Brotherhood",
     "character": "Edward Elric"
   },
   {
-    "japanese": "大丈夫、僕最強だから",
+    "japanese": "\u5927\u4e08\u592b\u3001\u50d5\u6700\u5f37\u3060\u304b\u3089",
     "romaji": "Daijoubu, boku saikyou dakara",
     "english": "Relax, I'm the strongest.",
     "anime": "Jujutsu Kaisen",
     "character": "Satoru Gojo"
   },
   {
-    "japanese": "俺は趣味でヒーローをやっている者だ",
+    "japanese": "\u4ffa\u306f\u8da3\u5473\u3067\u30d2\u30fc\u30ed\u30fc\u3092\u3084\u3063\u3066\u3044\u308b\u8005\u3060",
     "romaji": "Ore wa shumi de hiiroo o yatte iru mono da",
     "english": "I'm just a hero for fun.",
     "anime": "One Punch Man",
     "character": "Saitama"
   },
   {
-    "japanese": "貴様ッ！見ているなッ！！",
+    "japanese": "\u8cb4\u69d8\u30c3\uff01\u898b\u3066\u3044\u308b\u306a\u30c3\uff01\uff01",
     "romaji": "Kisama! Mite iru na!!",
     "english": "You! You're watching me!",
     "anime": "JoJo's Bizarre Adventure: Stone Ocean",
     "character": "Jolyne Cujoh"
   },
   {
-    "japanese": "レロレロレロレロ",
+    "japanese": "\u30ec\u30ed\u30ec\u30ed\u30ec\u30ed\u30ec\u30ed",
     "romaji": "Rero rero rero rero",
     "english": "Rero rero rero rero.",
     "anime": "JoJo's Bizarre Adventure: Stardust Crusaders",
     "character": "Noriaki Kakyoin"
   },
   {
-    "japanese": "守るものがある限り、俺は負けない",
+    "japanese": "\u5b88\u308b\u3082\u306e\u304c\u3042\u308b\u9650\u308a\u3001\u4ffa\u306f\u8ca0\u3051\u306a\u3044",
     "romaji": "Mamoru mono ga aru kagiri, ore wa makenai",
     "english": "As long as I have something to protect, I won't lose.",
     "anime": "Bleach",
     "character": "Ichigo Kurosaki"
   },
   {
-    "japanese": "本気を出す時が来たようだ",
+    "japanese": "\u672c\u6c17\u3092\u51fa\u3059\u6642\u304c\u6765\u305f\u3088\u3046\u3060",
     "romaji": "Honki wo dasu toki ga kita you da",
     "english": "It looks like it's time to get serious.",
     "anime": "My Hero Academia",
     "character": "All Might"
   },
   {
-    "japanese": "普通の生活がしたいだけなんだ",
+    "japanese": "\u666e\u901a\u306e\u751f\u6d3b\u304c\u3057\u305f\u3044\u3060\u3051\u306a\u3093\u3060",
     "romaji": "Futsuu no seikatsu ga shitai dake nanda",
     "english": "All I want is to live a normal life.",
     "anime": "Chainsaw Man",
     "character": "Denji"
   },
   {
-    "japanese": "僕は新世界の神となる",
+    "japanese": "\u50d5\u306f\u65b0\u4e16\u754c\u306e\u795e\u3068\u306a\u308b",
     "romaji": "Boku wa shin sekai no kami to naru",
     "english": "I will become the god of the new world.",
     "anime": "Death Note",
     "character": "Light Yagami"
   },
   {
-    "japanese": "次にお前は「やれやれだぜ」と言う！",
+    "japanese": "\u6b21\u306b\u304a\u524d\u306f\u300c\u3084\u308c\u3084\u308c\u3060\u305c\u300d\u3068\u8a00\u3046\uff01",
     "romaji": "Tsugi ni omae wa 'yare yare da ze' to iu!",
     "english": "Next you'll say, 'Good grief!'",
     "anime": "JoJo's Bizarre Adventure: Stardust Crusaders",
     "character": "Joseph Joestar"
   },
   {
-    "japanese": "仲間を信じることが俺の魔法だ",
+    "japanese": "\u4ef2\u9593\u3092\u4fe1\u3058\u308b\u3053\u3068\u304c\u4ffa\u306e\u9b54\u6cd5\u3060",
     "romaji": "Nakama o shinjiru koto ga ore no mahou da",
     "english": "Believing in my friends is my magic.",
     "anime": "Fairy Tail",
     "character": "Natsu Dragneel"
   },
   {
-    "japanese": "月に代わっておしおきよ!",
+    "japanese": "\u6708\u306b\u4ee3\u308f\u3063\u3066\u304a\u3057\u304a\u304d\u3088!",
     "romaji": "Tsuki ni kawatte oshioki yo!",
     "english": "In the name of the moon, I'll punish you!",
     "anime": "Sailor Moon",
     "character": "Usagi Tsukino"
   },
   {
-    "japanese": "僕はもう逃げない!",
+    "japanese": "\u50d5\u306f\u3082\u3046\u9003\u3052\u306a\u3044!",
     "romaji": "Boku wa mou nigenai!",
     "english": "I won't run away anymore!",
     "anime": "Hunter x Hunter",
     "character": "Gon Freecss"
   },
   {
-    "japanese": "オラに元気を分けてくれ!",
+    "japanese": "\u30aa\u30e9\u306b\u5143\u6c17\u3092\u5206\u3051\u3066\u304f\u308c!",
     "romaji": "Ora ni genki o wakete kure!",
     "english": "Lend me your energy!",
     "anime": "Dragon Ball Z",
     "character": "Son Goku"
   },
   {
-    "japanese": "やれやれだぜ",
+    "japanese": "\u3084\u308c\u3084\u308c\u3060\u305c",
     "romaji": "Yare yare da ze",
     "english": "Good grief.",
     "anime": "JoJo's Bizarre Adventure: Stardust Crusaders",
     "character": "Jotaro Kujo"
   },
   {
-    "japanese": "おまえはもう死んでいる",
+    "japanese": "\u304a\u307e\u3048\u306f\u3082\u3046\u6b7b\u3093\u3067\u3044\u308b",
     "romaji": "Omae wa mou shindeiru",
     "english": "You're already dead.",
     "anime": "Fist of the North Star",
     "character": "Kenshiro"
   },
   {
-    "japanese": "今日の俺は一味違うぜ！",
+    "japanese": "\u4eca\u65e5\u306e\u4ffa\u306f\u4e00\u5473\u9055\u3046\u305c\uff01",
     "romaji": "Kyou no ore wa hitomi chigau ze!",
     "english": "I'm on a different level today!",
     "anime": "JoJo's Bizarre Adventure: Diamond is Unbreakable",
     "character": "Okuyasu Nijimura"
   },
   {
-    "japanese": "まだだ、まだ終わらんよ！",
+    "japanese": "\u307e\u3060\u3060\u3001\u307e\u3060\u7d42\u308f\u3089\u3093\u3088\uff01",
     "romaji": "Mada da, mada owaran yo!",
     "english": "Not yet! It's not over yet!",
     "anime": "Mobile Suit Gundam",
     "character": "Char Aznable"
   },
   {
-    "japanese": "笑えばいいと思うよ",
+    "japanese": "\u7b11\u3048\u3070\u3044\u3044\u3068\u601d\u3046\u3088",
     "romaji": "Waraeba ii to omou yo",
     "english": "I think you should just laugh.",
     "anime": "Neon Genesis Evangelion",
     "character": "Rei Ayanami"
   },
   {
-    "japanese": "俺はガンダムだ！",
+    "japanese": "\u4ffa\u306f\u30ac\u30f3\u30c0\u30e0\u3060\uff01",
     "romaji": "Ore wa Gandamu da!",
     "english": "I am Gundam!",
     "anime": "Mobile Suit Gundam 00",
     "character": "Setsuna F. Seiei"
   },
   {
-    "japanese": "撃っていいのは撃たれる覚悟がある奴だけだ",
+    "japanese": "\u6483\u3063\u3066\u3044\u3044\u306e\u306f\u6483\u305f\u308c\u308b\u899a\u609f\u304c\u3042\u308b\u5974\u3060\u3051\u3060",
     "romaji": "Utte ii no wa uterareru kakugo ga aru yatsu dake da",
     "english": "Only those prepared to be shot should pull the trigger.",
     "anime": "Code Geass: Lelouch of the Rebellion",
     "character": "Lelouch vi Britannia"
   },
   {
-    "japanese": "俺は人間をやめるぞ！ジョジョーーッ！！",
+    "japanese": "\u4ffa\u306f\u4eba\u9593\u3092\u3084\u3081\u308b\u305e\uff01\u30b8\u30e7\u30b8\u30e7\u30fc\u30fc\u30c3\uff01\uff01",
     "romaji": "Ore wa ningen o yameru zo! Jojo!!",
     "english": "I'm going to stop being human, JoJo!",
     "anime": "JoJo's Bizarre Adventure: Phantom Blood",
     "character": "Dio Brando"
   },
   {
-    "japanese": "やれやれだぜ…まったく。",
+    "japanese": "\u3084\u308c\u3084\u308c\u3060\u305c\u2026\u307e\u3063\u305f\u304f\u3002",
     "romaji": "Yare yare da ze... mattaku.",
     "english": "Good grief... honestly.",
     "anime": "JoJo's Bizarre Adventure: Stardust Crusaders",
     "character": "Jotaro Kujo"
   },
   {
-    "japanese": "逃げるのも勇気だぞ",
+    "japanese": "\u9003\u3052\u308b\u306e\u3082\u52c7\u6c17\u3060\u305e",
     "romaji": "Nigeru no mo yuuki da zo",
     "english": "Running away can take courage too.",
     "anime": "Mob Psycho 100",
     "character": "Arataka Reigen"
   },
   {
-    "japanese": "あきらめたらそこで試合終了ですよ…？",
+    "japanese": "\u3042\u304d\u3089\u3081\u305f\u3089\u305d\u3053\u3067\u8a66\u5408\u7d42\u4e86\u3067\u3059\u3088\u2026\uff1f",
     "romaji": "Akirametara soko de shiai shuuryou desu yo...?",
     "english": "If you give up, that's the end of the game.",
     "anime": "Slam Dunk",
     "character": "Kaede Rukawa"
   },
   {
-    "japanese": "この世界は残酷だ... そしてとても美しい",
+    "japanese": "\u3053\u306e\u4e16\u754c\u306f\u6b8b\u9177\u3060... \u305d\u3057\u3066\u3068\u3066\u3082\u7f8e\u3057\u3044",
     "romaji": "Kono sekai wa zankoku da... soshite totemo utsukushii",
     "english": "The world is cruel... but also very beautiful.",
     "anime": "Attack on Titan",
     "character": "Mikasa Ackerman"
   },
   {
-    "japanese": "ゼハハハハ",
+    "japanese": "\u30bc\u30cf\u30cf\u30cf\u30cf",
     "romaji": "Ze hahaha",
     "english": "Ze ha ha ha!",
     "anime": "One Piece",
     "character": "Marshall D. Teach (Blackbeard)"
   },
   {
-    "japanese": "仲間を大切にしない奴はそれ以上のクズだ",
+    "japanese": "\u4ef2\u9593\u3092\u5927\u5207\u306b\u3057\u306a\u3044\u5974\u306f\u305d\u308c\u4ee5\u4e0a\u306e\u30af\u30ba\u3060",
     "romaji": "Nakama o taisetsu ni shinai yatsu wa sore ijou no kuzu da",
     "english": "Those who don't take care of their comrades are worse than scum.",
     "anime": "Naruto",
     "character": "Kakashi Hatake"
   },
   {
-    "japanese": "ä»²é–“ã‚’å¤§åˆ‡ã�«ã�—ã�ªã�„å¥´ã�¯ã��ã‚Œä»¥ä¸Šã�®ã‚¯ã‚ºã� ",
+    "japanese": "\u00e4\u00bb\u00b2\u00e9\u2013\u201c\u00e3\u201a\u2019\u00e5\u00a4\u00a7\u00e5\u02c6\u2021\u00e3\ufffd\u00ab\u00e3\ufffd\u2014\u00e3\ufffd\u00aa\u00e3\ufffd\u201e\u00e5\u00a5\u00b4\u00e3\ufffd\u00af\u00e3\ufffd\ufffd\u00e3\u201a\u0152\u00e4\u00bb\u00a5\u00e4\u00b8\u0160\u00e3\ufffd\u00ae\u00e3\u201a\u00af\u00e3\u201a\u00ba\u00e3\ufffd\u00a0",
     "romaji": "Nakama o taisetsu ni shinai yatsu wa sore ijou no kuzu da",
     "english": "Those who don't take care of their comrades are worse than scum.",
     "anime": "Naruto",
     "character": "Kakashi Hatake"
   },
   {
-    "japanese": "æœˆã�«ä»£ã‚�ã�£ã�¦ã�Šã�—ã�Šã��ã‚ˆ!",
+    "japanese": "\u00e6\u0153\u02c6\u00e3\ufffd\u00ab\u00e4\u00bb\u00a3\u00e3\u201a\ufffd\u00e3\ufffd\u00a3\u00e3\ufffd\u00a6\u00e3\ufffd\u0160\u00e3\ufffd\u2014\u00e3\ufffd\u0160\u00e3\ufffd\ufffd\u00e3\u201a\u02c6!",
     "romaji": "Tsuki ni kawatte oshioki yo!",
     "english": "In the name of the moon, I'll punish you!",
     "anime": "Sailor Moon",
     "character": "Usagi Tsukino"
   },
   {
-    "japanese": "僕は新世界の神となる",
+    "japanese": "\u50d5\u306f\u65b0\u4e16\u754c\u306e\u795e\u3068\u306a\u308b",
     "romaji": "Boku wa shin sekai no kami to naru",
     "english": "I will become the god of the new world.",
     "anime": "Death Note",
     "character": "Light Yagami"
   },
   {
-    "japanese": "æ’ƒã�£ã�¦ã�„ã�„ã�®ã�¯æ’ƒã�Ÿã‚Œã‚‹è¦šæ‚Ÿã�Œã�‚ã‚‹å¥´ã� ã�‘ã� ",
+    "japanese": "\u00e6\u2019\u0192\u00e3\ufffd\u00a3\u00e3\ufffd\u00a6\u00e3\ufffd\u201e\u00e3\ufffd\u201e\u00e3\ufffd\u00ae\u00e3\ufffd\u00af\u00e6\u2019\u0192\u00e3\ufffd\u0178\u00e3\u201a\u0152\u00e3\u201a\u2039\u00e8\u00a6\u0161\u00e6\u201a\u0178\u00e3\ufffd\u0152\u00e3\ufffd\u201a\u00e3\u201a\u2039\u00e5\u00a5\u00b4\u00e3\ufffd\u00a0\u00e3\ufffd\u2018\u00e3\ufffd\u00a0",
     "romaji": "Utte ii no wa uterareru kakugo ga aru yatsu dake da",
     "english": "Only those prepared to be shot should pull the trigger.",
     "anime": "Code Geass: Lelouch of the Rebellion",
     "character": "Lelouch vi Britannia"
   },
   {
-    "japanese": "俺を誰だと思ってやがる!",
+    "japanese": "\u4ffa\u3092\u8ab0\u3060\u3068\u601d\u3063\u3066\u3084\u304c\u308b!",
     "romaji": "Ore o dare da to omotte yagaru!",
     "english": "Who the hell do you think I am!",
     "anime": "Gurren Lagann",
     "character": "Kamina"
   },
   {
-    "japanese": "オラに元気を分けてくれ!",
+    "japanese": "\u30aa\u30e9\u306b\u5143\u6c17\u3092\u5206\u3051\u3066\u304f\u308c!",
     "romaji": "Ora ni genki o wakete kure!",
     "english": "Lend me your energy!",
     "anime": "Dragon Ball Z",
     "character": "Son Goku"
   },
   {
-    "japanese": "ãƒ­ãƒ¼ãƒ‰ãƒ­ãƒ¼ãƒ©ãƒ¼ã� ãƒƒï¼�",
+    "japanese": "\u00e3\u0192\u00ad\u00e3\u0192\u00bc\u00e3\u0192\u2030\u00e3\u0192\u00ad\u00e3\u0192\u00bc\u00e3\u0192\u00a9\u00e3\u0192\u00bc\u00e3\ufffd\u00a0\u00e3\u0192\u0192\u00ef\u00bc\ufffd",
     "romaji": "Rodo rora da!",
     "english": "Road roller! (alt wording 1)",
     "anime": "JoJo's Bizarre Adventure: Stardust Crusaders",
     "character": "DIO"
   },
   {
-    "japanese": "ã‚„ã‚Œã‚„ã‚Œã� ã�œ",
+    "japanese": "\u00e3\u201a\u201e\u00e3\u201a\u0152\u00e3\u201a\u201e\u00e3\u201a\u0152\u00e3\ufffd\u00a0\u00e3\ufffd\u0153",
     "romaji": "Yare yare da ze",
     "english": "Good grief. (alt wording 6)",
     "anime": "JoJo's Bizarre Adventure: Stardust Crusaders",
     "character": "Jotaro Kujo"
   },
   {
-    "japanese": "ã‚ªãƒ©ã‚ªãƒ©ã‚ªãƒ©ã‚ªãƒ©ã‚ªãƒ©ï¼�",
+    "japanese": "\u00e3\u201a\u00aa\u00e3\u0192\u00a9\u00e3\u201a\u00aa\u00e3\u0192\u00a9\u00e3\u201a\u00aa\u00e3\u0192\u00a9\u00e3\u201a\u00aa\u00e3\u0192\u00a9\u00e3\u201a\u00aa\u00e3\u0192\u00a9\u00ef\u00bc\ufffd",
     "romaji": "Ora ora ora ora ora!",
     "english": "Ora ora ora ora ora! (alt wording 8)",
     "anime": "JoJo's Bizarre Adventure: Stardust Crusaders",
     "character": "Jotaro Kujo"
   },
   {
-    "japanese": "貴様ッ！見ているなッ！！",
+    "japanese": "\u8cb4\u69d8\u30c3\uff01\u898b\u3066\u3044\u308b\u306a\u30c3\uff01\uff01",
     "romaji": "Kisama! Mite iru na!!",
     "english": "You! You're watching me! (alt wording 11)",
     "anime": "JoJo's Bizarre Adventure: Stone Ocean",
     "character": "Jolyne Cujoh"
   },
   {
-    "japanese": "ブチャラティ、来た！",
+    "japanese": "\u30d6\u30c1\u30e3\u30e9\u30c6\u30a3\u3001\u6765\u305f\uff01",
     "romaji": "Bucharati, kita!",
     "english": "Bucciarati is here! (alt wording 17)",
     "anime": "JoJo's Bizarre Adventure: Golden Wind",
     "character": "Narancia Ghirga"
   },
   {
-    "japanese": "é€ƒã�’ã�¡ã‚ƒãƒ€ãƒ¡ã� !",
+    "japanese": "\u00e9\u20ac\u0192\u00e3\ufffd\u2019\u00e3\ufffd\u00a1\u00e3\u201a\u0192\u00e3\u0192\u20ac\u00e3\u0192\u00a1\u00e3\ufffd\u00a0!",
     "romaji": "Nigeccha dame da!",
     "english": "I mustn't run away! (alt wording 48)",
     "anime": "Neon Genesis Evangelion",
     "character": "Shinji Ikari"
   },
   {
-    "japanese": "ã‚„ã‚Œã‚„ã‚Œã� ã�œ",
+    "japanese": "\u00e3\u201a\u201e\u00e3\u201a\u0152\u00e3\u201a\u201e\u00e3\u201a\u0152\u00e3\ufffd \u00e3\ufffd\u0153",
     "romaji": "Yare yare da ze",
     "english": "Good grief. (alt wording 6) (alt wording 58)",
     "anime": "JoJo's Bizarre Adventure: Stardust Crusaders",
     "character": "Jotaro Kujo"
   },
   {
-    "japanese": "ã�¾ã� ã� ã€�ã�¾ã� çµ‚ã‚�ã‚‰ã‚“ã‚ˆï¼�",
+    "japanese": "\u00e3\ufffd\u00be\u00e3\ufffd\u00a0\u00e3\ufffd\u00a0\u00e3\u20ac\ufffd\u00e3\ufffd\u00be\u00e3\ufffd\u00a0\u00e7\u00b5\u201a\u00e3\u201a\ufffd\u00e3\u201a\u2030\u00e3\u201a\u201c\u00e3\u201a\u02c6\u00ef\u00bc\ufffd",
     "romaji": "Mada da, mada owaran yo!",
     "english": "Not yet! It's not over yet! (alt wording 22)",
     "anime": "Mobile Suit Gundam",
     "character": "Char Aznable"
   },
   {
-    "japanese": "さらに向こうへ! プルスウルトラ!",
+    "japanese": "\u3055\u3089\u306b\u5411\u3053\u3046\u3078! \u30d7\u30eb\u30b9\u30a6\u30eb\u30c8\u30e9!",
     "romaji": "Sarani mukou e! Purusu Urutora!",
     "english": "Go beyond! Plus Ultra! (alt wording 38)",
     "anime": "My Hero Academia",
     "character": "All Might"
   },
   {
-    "japanese": "フォッフォッフォッ",
+    "japanese": "\u30d5\u30a9\u30c3\u30d5\u30a9\u30c3\u30d5\u30a9\u30c3",
     "romaji": "Fo fo fo fo",
     "english": "Fosh fosh fosh fosh. (alt wording 28)",
     "anime": "One Piece",
     "character": "Kozuki Sukiyaki"
   },
   {
-    "japanese": "無駄無駄無駄無駄無駄！",
+    "japanese": "\u7121\u99c4\u7121\u99c4\u7121\u99c4\u7121\u99c4\u7121\u99c4\uff01",
     "romaji": "Muda muda muda muda muda!",
     "english": "Useless! Useless! Useless! (alt wording 7) (alt wording 59)",
     "anime": "JoJo's Bizarre Adventure: Stardust Crusaders",
     "character": "DIO"
   },
   {
-    "japanese": "諦めたらそこで試合終了だよ",
-    "romaji": "Akirametara soko de shiai shūryō da yo.",
+    "japanese": "\u8ae6\u3081\u305f\u3089\u305d\u3053\u3067\u8a66\u5408\u7d42\u4e86\u3060\u3088",
+    "romaji": "Akirametara soko de shiai sh\u016bry\u014d da yo.",
     "english": "If you give up, that is when the game is over.",
     "anime": "Slam Dunk",
     "character": "Anzai-sensei"
+  },
+  {
+    "japanese": "\u99c6\u9010\u3057\u3066\u3084\u308b!\u3053\u306e\u4e16\u304b\u3089\u4e00\u5339\u6b8b\u3089\u305a!",
+    "romaji": "Kuchiku shite yaru! Kono yo kara ippiki nokorazu!",
+    "english": "I'll exterminate them! Every last one from this world!",
+    "anime": "Attack on Titan",
+    "character": "Eren Yeager"
   }
 ]
