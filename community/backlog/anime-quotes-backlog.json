@@ -7,7 +7,7 @@
     "anime": "JoJo's Bizarre Adventure: Stardust Crusaders",
     "character": "DIO",
     "issued": true,
-    "completed": false
+    "completed": true
   },
   {
     "id": 2,
@@ -37,7 +37,7 @@
     "anime": "JoJo's Bizarre Adventure: Diamond is Unbreakable",
     "character": "Rohan Kishibe",
     "issued": true,
-    "completed": false
+    "completed": true
   },
   {
     "id": 5,
@@ -177,7 +177,7 @@
     "anime": "Fist of the North Star",
     "character": "Kenshiro",
     "issued": true,
-    "completed": false
+    "completed": true
   },
   {
     "id": 19,
@@ -197,7 +197,7 @@
     "anime": "One Piece",
     "character": "Monkey D. Luffy",
     "issued": true,
-    "completed": false
+    "completed": true
   },
   {
     "id": 21,
@@ -326,7 +326,7 @@
     "english": "I never give up, believe it!",
     "anime": "Naruto",
     "character": "Naruto Uzumaki",
-    "completed": false,
+    "completed": true,
     "issued": true
   },
   {
@@ -346,7 +346,7 @@
     "english": "A lesson without pain is meaningless.",
     "anime": "Fullmetal Alchemist: Brotherhood",
     "character": "Edward Elric",
-    "completed": false,
+    "completed": true,
     "issued": true
   },
   {
@@ -357,7 +357,7 @@
     "anime": "Attack on Titan",
     "character": "Eren Yeager",
     "issued": true,
-    "completed": false
+    "completed": true
   },
   {
     "id": 37,
@@ -406,7 +406,7 @@
     "english": "In the name of the moon, I'll punish you!",
     "anime": "Sailor Moon",
     "character": "Usagi Tsukino",
-    "completed": false,
+    "completed": true,
     "issued": true
   },
   {
@@ -416,7 +416,7 @@
     "english": "I'm just a hero for fun.",
     "anime": "One Punch Man",
     "character": "Saitama",
-    "completed": false,
+    "completed": true,
     "issued": true
   },
   {
@@ -447,7 +447,7 @@
     "anime": "Code Geass: Lelouch of the Rebellion",
     "character": "Lelouch vi Britannia",
     "issued": true,
-    "completed": false
+    "completed": true
   },
   {
     "id": 46,
@@ -527,7 +527,7 @@
     "anime": "JoJo's Bizarre Adventure: Stardust Crusaders",
     "character": "DIO",
     "issued": true,
-    "completed": false
+    "completed": true
   },
   {
     "id": 54,
@@ -557,7 +557,7 @@
     "anime": "JoJo's Bizarre Adventure: Diamond is Unbreakable",
     "character": "Rohan Kishibe",
     "issued": true,
-    "completed": false
+    "completed": true
   },
   {
     "id": 57,
@@ -697,7 +697,7 @@
     "anime": "Fist of the North Star",
     "character": "Kenshiro",
     "issued": true,
-    "completed": false
+    "completed": true
   },
   {
     "id": 71,
@@ -717,7 +717,7 @@
     "anime": "One Piece",
     "character": "Monkey D. Luffy",
     "issued": true,
-    "completed": false
+    "completed": true
   },
   {
     "id": 73,
@@ -847,7 +847,7 @@
     "anime": "Naruto",
     "character": "Naruto Uzumaki",
     "issued": true,
-    "completed": false
+    "completed": true
   },
   {
     "id": 86,
@@ -867,7 +867,7 @@
     "anime": "Fullmetal Alchemist: Brotherhood",
     "character": "Edward Elric",
     "issued": true,
-    "completed": false
+    "completed": true
   },
   {
     "id": 88,
@@ -877,7 +877,7 @@
     "anime": "Attack on Titan",
     "character": "Eren Yeager",
     "issued": true,
-    "completed": false
+    "completed": true
   },
   {
     "id": 89,
@@ -927,7 +927,7 @@
     "anime": "Sailor Moon",
     "character": "Usagi Tsukino",
     "issued": true,
-    "completed": false
+    "completed": true
   },
   {
     "id": 94,
@@ -937,7 +937,7 @@
     "anime": "One Punch Man",
     "character": "Saitama",
     "issued": true,
-    "completed": false
+    "completed": true
   },
   {
     "id": 95,
@@ -967,7 +967,7 @@
     "anime": "Code Geass: Lelouch of the Rebellion",
     "character": "Lelouch vi Britannia",
     "issued": true,
-    "completed": false
+    "completed": true
   },
   {
     "id": 98,
@@ -986,7 +986,7 @@
     "english": "I won't run away anymore! (alt wording 47)",
     "anime": "Hunter x Hunter",
     "character": "Gon Freecss",
-    "issued": true,
+    "issued": false,
     "completed": false
   },
   {
@@ -1016,7 +1016,7 @@
     "english": "The word 'give up' isn't in my dictionary. (alt wording 50)",
     "anime": "Black Clover",
     "character": "Asta",
-    "issued": true,
+    "issued": false,
     "completed": false
   },
   {
@@ -1026,7 +1026,7 @@
     "english": "Running away can take courage too. (alt wording 51)",
     "anime": "Mob Psycho 100",
     "character": "Arataka Reigen",
-    "issued": true,
+    "issued": false,
     "completed": false
   },
   {
