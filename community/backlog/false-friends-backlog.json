@@ -455,7 +455,7 @@
     "termB": "kiku (hear/listen) vs kiku (ask)",
     "explanation": "Same romaji, different kanji/meaning. Entry 51.",
     "example": "Sensei ni shitsumon wo kiita.",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
